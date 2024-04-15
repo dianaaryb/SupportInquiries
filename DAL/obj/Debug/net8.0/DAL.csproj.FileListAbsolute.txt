@@ -1,0 +1,17 @@
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/bin/Debug/net8.0/DAL.deps.json
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/bin/Debug/net8.0/DAL.runtimeconfig.json
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/bin/Debug/net8.0/DAL.dll
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/bin/Debug/net8.0/DAL.pdb
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/bin/Debug/net8.0/Domain.dll
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/bin/Debug/net8.0/Domain.pdb
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.csproj.AssemblyReference.cache
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.AssemblyInfoInputs.cache
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.AssemblyInfo.cs
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.csproj.CoreCompileInputs.cache
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.csproj.CopyComplete
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.dll
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/refint/DAL.dll
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.pdb
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/DAL.genruntimeconfig.cache
+/Users/di/RiderProjects/SupportInquiriesApp/DAL/obj/Debug/net8.0/ref/DAL.dll

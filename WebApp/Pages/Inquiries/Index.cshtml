@@ -1,0 +1,77 @@
+@page
+@model WebApp.Pages.Inquiries.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="display-3">Inquiries</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Description</th>
+            <th>Submission Time</th>
+            <th>Resolution Deadline</th>
+            <th>Resolved</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Inquiries) {
+    if (item != null)
+    {
+        var isUrgent = DateTime.Now >= item.ResolutionDeadline || (item.ResolutionDeadline - DateTime.Now).TotalHours <= 1;
+        <tr style="@(isUrgent ? "color: darkred;" : "")">
+            <td>
+                @{
+                    string description = item.Description;
+                    string processedDescription = "";
+                    if (description.Length > 40)
+                    {
+                        int currentPosition = 0;
+                        while (currentPosition + 40 < description.Length)
+                        {
+                            int breakPosition = description.LastIndexOf(' ', currentPosition + 40);
+                            if (breakPosition == -1 || breakPosition <= currentPosition)
+                            {
+                                breakPosition = currentPosition + 40;
+                            }
+                
+                            processedDescription += description.Substring(currentPosition, breakPosition - currentPosition) + "<br/>";
+                            currentPosition = breakPosition + 1;
+                        }
+                        processedDescription += description.Substring(currentPosition);
+                    }
+                    else
+                    {
+                        processedDescription = description;
+                    }
+                }
+                @Html.Raw(processedDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubmissionTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ResolutionDeadline)
+            </td>
+            <td>
+                <form method="post">
+                    <input type="hidden" name="InquiryId" value="@item.InquiryId" />
+                    <input type="checkbox" name="IsResolved" value="true" onchange="this.form.submit();" />
+                </form>
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.InquiryId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.InquiryId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.InquiryId">Delete</a>
+            </td>
+        </tr>
+    }
+}
+    </tbody>
+</table>

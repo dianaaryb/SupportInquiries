@@ -1,0 +1,14 @@
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/bin/Debug/net8.0/Domain.deps.json
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/bin/Debug/net8.0/Domain.runtimeconfig.json
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/bin/Debug/net8.0/Domain.dll
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/bin/Debug/net8.0/Domain.pdb
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.csproj.AssemblyReference.cache
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.dll
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/refint/Domain.dll
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.pdb
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/Domain.genruntimeconfig.cache
+/Users/di/RiderProjects/SupportInquiriesApp/Domain/obj/Debug/net8.0/ref/Domain.dll

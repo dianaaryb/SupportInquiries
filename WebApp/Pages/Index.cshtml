@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1 class="display-2">Support Inquiries</h1>
+<h2 class="display-6">Inquiries that need urgent attention</h2>
+
+@if (Model.FilteredInquiries.Any())
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Description</th>
+            <th>Submission Time</th>
+            <th>Resolution Deadline</th>
+            <th>Is Resolved?</th>
+        </tr>
+        </thead>
+        <tbody class="urgent_inquiries">
+        @foreach (var inquiry in Model.FilteredInquiries)
+        {
+            <tr>
+                <td>
+                    @{
+                        string description = inquiry.Description;
+                        string processedDescription = "";
+                        if (description.Length > 40)
+                        {
+                            int currentPosition = 0;
+                            while (currentPosition + 40 < description.Length)
+                            {
+                                int breakPosition = description.LastIndexOf(' ', currentPosition + 40);
+                                if (breakPosition == -1 || breakPosition <= currentPosition)
+                                {
+                                    breakPosition = currentPosition + 40;
+                                }
+                    
+                                processedDescription += description.Substring(currentPosition, breakPosition - currentPosition) + "<br/>";
+                                currentPosition = breakPosition + 1;
+                            }
+                            processedDescription += description.Substring(currentPosition);
+                        }
+                        else
+                        {
+                            processedDescription = description;
+                        }
+                    }
+                    @Html.Raw(processedDescription)
+                </td>
+                <td>@inquiry.SubmissionTime.ToString("g")</td>
+                <td>@inquiry.ResolutionDeadline.ToString("g")</td>
+                <td>@(inquiry.IsResolved ? "Yes" : "No")</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No inquiries are due within the next hour or have passed their deadline.</p>
+}
